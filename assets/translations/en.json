@@ -1,0 +1,25 @@
+{
+    "appName": "Virtual Dice Thrower",
+    "error": "Ops! Something went wrong! :(",
+    "home": {
+        "start": "Lets ROLL!",
+        "info": "Information"
+    },
+    "info": {
+        "appBar": "Information",
+        "version": "Version",
+        "appName": "App name",
+        "packageName": "Package name",
+        "build": "Build version"
+    },
+    "dice": {
+        "appBar": "Rolling dice: k{size} (x{multiplier})",
+        "clear": "Reset",
+        "moreDice": "X dices",
+        "roll": "Roll!",
+        "goRoll": "Roll!",
+        "resultsCount": "Rolls count: {count}",
+        "resultsSum": "Sum: {sum}",
+        "saveDices": "Confirm"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "appName": "Virtual Dice Thrower",
+    "error": "Ups! Coś nie pykło! :(",
+    "home": {
+        "start": "Rzucajmy!",
+        "info": "Informacje"
+    },
+    "info": {
+        "appBar": "Informacje",
+        "appName": "Nazwa aplikacji",
+        "packageName": "Nazwa paczki",
+        "build": "Wersja build'a",
+        "version": "Wersja"
+    },
+    "dice": {
+        "appBar": "Rzut kostką: k{size} (x{multiplier})",
+        "clear": "Wyzeruj",
+        "moreDice": "X kostek",
+        "roll": "Rzut!",
+        "goRoll": "Rzucaj!",
+        "resultsCount": "Liczba rzutów: {count}",
+        "resultsSum": "Suma: {sum}",
+        "saveDices": "Zatwierdź"
+    }
+}
