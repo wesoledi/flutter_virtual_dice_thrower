@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:virtual_dice/services/grid/dice_generator.dart';
+import 'package:virtual_dice/services/grid/dice_selection_generator.dart';
 import 'package:virtual_dice/widgets/components/frosted_glass_box.dart';
+import 'package:virtual_dice/variables/select_dice_styles.dart';
 
 class SelectDicePage extends StatelessWidget {
   SelectDicePage({Key key, this.title}) : super(key: key);
@@ -25,6 +26,7 @@ class SelectDicePage extends StatelessWidget {
             padding: EdgeInsets.only(top: 30, bottom: 30),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 FrostedGlassBox(
                   child: GridView.count(
@@ -32,13 +34,29 @@ class SelectDicePage extends StatelessWidget {
                     crossAxisCount: 3,
                     crossAxisSpacing: 10,
                     mainAxisSpacing: 10,
-                    children: DiceItemsGenerator.getItems(
+                    children: DiceSelectionItemsGenerator.getItems(
                       childSize: gridChildSize,
                       onTap: (route) { goToDice(context, route); }
                     ),
                   ),
                   width: screenSize.width - 20,
-                  height: gridChildSize * 2 + 20 + 10,
+                  height: gridChildSize * 2 + 20 + 15,
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 10.0),
+                ),
+                FrostedGlassBox(
+                  child: Center(
+                    child: DecoratedBox(
+                      decoration: SelectDiceStyles.tileBoxStyle,
+                      child:TextButton(
+                        child: Text('selection.more', style: SelectDiceStyles.textButtonStyle),
+                        onPressed: () { goToAdditionalSelection(context); },
+                      ),
+                    ),
+                  ),
+                  width: screenSize.width / 3,
+                  height: 75,
                 ),
               ],
             ),
@@ -48,7 +66,11 @@ class SelectDicePage extends StatelessWidget {
     );
   }
 
-  void goToDice(context, link) {
-    Navigator.pushNamed(context, link);
+  void goToDice(BuildContext context, String route) {
+    Navigator.pushNamed(context, route);
+  }
+
+  void goToAdditionalSelection(BuildContext context) {
+    Navigator.pushNamed(context, '/select_dice_more');
   }
 }

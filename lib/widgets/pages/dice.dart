@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:wakelock/wakelock.dart';
+import 'package:virtual_dice/variables/dices_listview_results_styles.dart';
 
 class DicePage extends StatefulWidget {
   DicePage({Key key, this.id}) : super(key: key);
@@ -167,18 +168,6 @@ class _DicePageState extends State<DicePage> {
   }
 
   Widget getListViewItems(BuildContext context, int index) {
-    TextStyle resultTextStyle = TextStyle(
-      color: Colors.black,
-      fontSize: 18,
-      fontWeight: FontWeight.bold,
-    );
-
-    TextStyle resultTextStyleHighlight = TextStyle (
-      color: Theme.of(context).primaryColor,
-      fontSize: 36,
-      fontWeight: FontWeight.bold,
-    );
-
     return Container(
       padding: EdgeInsets.all(10),
       color: index == 0 
@@ -188,7 +177,11 @@ class _DicePageState extends State<DicePage> {
         padding: EdgeInsets.all(5.0),
         child: Text(
           getItemValue(index), 
-          style: index == 0 ? resultTextStyleHighlight : resultTextStyle
+          style: index == 0 
+            ? DicesListViewResultsStyles.resultTopTextStyle.copyWith(
+              color: Theme.of(context).primaryColor
+            )
+            : DicesListViewResultsStyles.resultTextStyle
         ),
       ),
     );

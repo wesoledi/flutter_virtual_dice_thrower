@@ -3,7 +3,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:virtual_dice/services/router.dart';
 
 void main() async {
-  // runApp(SimpleVirtualDiceApp());
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
 

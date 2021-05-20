@@ -12,6 +12,11 @@
         "packageName": "Package name",
         "build": "Build version"
     },
+    "selection": {
+        "appBar": "Non-standard dices",
+        "more": "More",
+        "call-of-cthulhu-k100": "Call of Cthulhu - k100"
+    },
     "dice": {
         "appBar": "Rolling dice: k{size} (x{multiplier})",
         "clear": "Reset",
@@ -21,5 +26,10 @@
         "resultsCount": "Rolls count: {count}",
         "resultsSum": "Sum: {sum}",
         "saveDices": "Confirm"
+    },
+    "cthulhu": {
+        "appBar": "Call of Cthulhu k100",
+        "bonus": "Add bonus dice",
+        "penalty": "Add penalty dice"
     }
 }

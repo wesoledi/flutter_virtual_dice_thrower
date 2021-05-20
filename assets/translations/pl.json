@@ -12,6 +12,11 @@
         "build": "Wersja build'a",
         "version": "Wersja"
     },
+    "selection": {
+        "appBar": "Niestandardowe kostki",
+        "more": "Więcej",
+        "call-of-cthulhu-k100": "Zew Cthulhu - k100"
+    },
     "dice": {
         "appBar": "Rzut kostką: k{size} (x{multiplier})",
         "clear": "Wyzeruj",
@@ -21,5 +26,10 @@
         "resultsCount": "Liczba rzutów: {count}",
         "resultsSum": "Suma: {sum}",
         "saveDices": "Zatwierdź"
+    },
+    "cthulhu": {
+        "appBar": "Zew Cthulhu k100",
+        "bonus": "Dodaj kość premiową",
+        "penalty": "Dodaj kość karną"
     }
 }
