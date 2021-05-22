@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:virtual_dice/dictionaries/dices_special.dart';
+import 'package:virtual_dice/dictionaries/dices_special_rpg.dart';
 
-class SelectDiceMorePage extends StatelessWidget {
-  SelectDiceMorePage({Key key, this.title}) : super(key: key);
+class SelectDiceRpgPage extends StatelessWidget {
+  SelectDiceRpgPage({Key key, this.title}) : super(key: key);
 
   final String title;
 
@@ -11,7 +11,7 @@ class SelectDiceMorePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('selection.appBar').tr(),
+        title: Text('selection.rpg').tr(),
       ),
       body: Container(
         child: ListView(
@@ -29,13 +29,13 @@ class SelectDiceMorePage extends StatelessWidget {
       fontWeight: FontWeight.normal,
     );
 
-    return List.generate(dicesSpecial.length, 
+    return List.generate(dicesSpecialRpg.length, 
       (index) => Container(
         height: 50,
         child: Center(
           child: TextButton(
-            child:Text(dicesSpecial[index].name, style: listViewItemTextStyle).tr(),
-            onPressed: () { onTap(context, dicesSpecial[index].route); },
+            child:Text(dicesSpecialRpg[index].name, style: listViewItemTextStyle).tr(),
+            onPressed: () { onTap(context, dicesSpecialRpg[index].route); },
           ),
         ),
       )

@@ -1,18 +1,10 @@
-class Dice {
-  final String name;
-  final String route;
+import 'package:virtual_dice/dictionaries/types/named_route.dart';
 
-  const Dice({
-    this.name, 
-    this.route
-  }): super();
-}
-
-List<Dice> dices = [
-  Dice(name: 'k3', route: '/dices/3'),
-  Dice(name: 'k6', route: '/dices/6'),
-  Dice(name: 'k8', route: '/dices/8'),
-  Dice(name: 'k10', route: '/dices/10'),
-  Dice(name: 'k20', route: '/dices/20'),
-  Dice(name: 'k100', route: '/dices/100'),
+List<NamedRoute> dices = [
+  NamedRoute(name: 'k3', route: '/dices/3'),
+  NamedRoute(name: 'k6', route: '/dices/6'),
+  NamedRoute(name: 'k8', route: '/dices/8'),
+  NamedRoute(name: 'k10', route: '/dices/10'),
+  NamedRoute(name: 'k20', route: '/dices/20'),
+  NamedRoute(name: 'k100', route: '/dices/100'),
 ];

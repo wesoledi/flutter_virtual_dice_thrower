@@ -15,7 +15,10 @@
     "selection": {
         "appBar": "Niestandardowe kostki",
         "more": "Więcej",
-        "call-of-cthulhu-k100": "Zew Cthulhu - k100"
+        "rpg": "Kości RPG",
+        "bg": "Gry plansz.",
+        "call-of-cthulhu": "Zew Cthulhu",
+        "dnd": "Dungeon And Dragons"
     },
     "dice": {
         "appBar": "Rzut kostką: k{size} (x{multiplier})",
@@ -25,11 +28,17 @@
         "goRoll": "Rzucaj!",
         "resultsCount": "Liczba rzutów: {count}",
         "resultsSum": "Suma: {sum}",
-        "saveDices": "Zatwierdź"
+        "saveDices": "Zatwierdź",
+        "current": "Obecnie wybrana:"
     },
-    "cthulhu": {
-        "appBar": "Zew Cthulhu k100",
+    "rpg": {
         "bonus": "Dodaj kość premiową",
         "penalty": "Dodaj kość karną"
+    },
+    "cthulhu": {
+        "appBar": "Zew Cthulhu"
+    },
+    "dnd": {
+        "appBar": "Dungeon and Dragons"
     }
 }

@@ -22,4 +22,10 @@ class SelectDiceStyles {
     borderRadius: BorderRadius.circular(20),
     color: Colors.white.withOpacity(0.5),
   );
+
+  static BoxDecoration tileBoxDarkBorderStyle = tileBoxStyle.copyWith(
+    border: Border.all(
+      color: Colors.black.withOpacity(0.5),
+    ),
+  );
 }

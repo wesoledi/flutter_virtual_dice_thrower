@@ -221,6 +221,7 @@ class _DicePageState extends State<DicePage> {
   void clearList() {
     setState(() {
       results.clear();
+      resultsPerDice.clear();
     });
   }
 

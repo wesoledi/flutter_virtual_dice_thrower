@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:virtual_dice/widgets/pages/home.dart';
 import 'package:virtual_dice/widgets/pages/select_dice.dart';
-import 'package:virtual_dice/widgets/pages/select_dice_more.dart';
+import 'package:virtual_dice/widgets/pages/select_dice_rpg.dart';
 import 'package:virtual_dice/widgets/pages/dice.dart';
 import 'package:virtual_dice/widgets/pages/info.dart';
 import 'package:virtual_dice/widgets/pages/error.dart';
@@ -19,8 +19,8 @@ class DiceRouter {
       return MaterialPageRoute(builder: (context) => SelectDicePage(title: title));
     }
 
-    if (settings.name == '/select_dice_more') {
-      return MaterialPageRoute(builder: (context) => SelectDiceMorePage(title: title));
+    if (settings.name == '/select_dice_rpg') {
+      return MaterialPageRoute(builder: (context) => SelectDiceRpgPage(title: title));
     }
 
     if (settings.name == '/info') {

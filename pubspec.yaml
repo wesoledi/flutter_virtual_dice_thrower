@@ -1,8 +1,7 @@
 name: virtual_dice
-description: A new Flutter project.
-
+description: Virtual Dice Sets, with random generator to simulate throwing; This app contain classic dices and also sets of popular RPG games
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-version: 1.1.0+1
+version: 1.1.2+1
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

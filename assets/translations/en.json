@@ -15,7 +15,10 @@
     "selection": {
         "appBar": "Non-standard dices",
         "more": "More",
-        "call-of-cthulhu-k100": "Call of Cthulhu - k100"
+        "rpg": "RPG dice sets",
+        "bg": "Board Games",
+        "call-of-cthulhu": "Call of Cthulhu",
+        "dnd": "Dungeon And Dragons"
     },
     "dice": {
         "appBar": "Rolling dice: k{size} (x{multiplier})",
@@ -25,11 +28,17 @@
         "goRoll": "Roll!",
         "resultsCount": "Rolls count: {count}",
         "resultsSum": "Sum: {sum}",
-        "saveDices": "Confirm"
+        "saveDices": "Confirm",
+        "current": "Current dice:"
     },
-    "cthulhu": {
-        "appBar": "Call of Cthulhu k100",
+    "rpg": {
         "bonus": "Add bonus dice",
         "penalty": "Add penalty dice"
+    },
+    "cthulhu": {
+        "appBar": "Call of Cthulhu"
+    },
+    "dnd": {
+        "appBar": "Dungeon and Dragons"
     }
 }
